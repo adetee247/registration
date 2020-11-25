@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        
+        .menu .mix{
+         float:left;
+        }
+        .menu input{
+         
+            width:150px;
+            height:40px;
+            border-radius:5px;
+            margin: 5px 10px 15px 5px;
+            display: flex;
+            
+          
+        }
+        .menu input .mix{
+            margin-right:30px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="label">Welcome</h1>
+        <form class="login_form" action="welcome.html" method="post" name="form" onsubmit="return 
+        validated()">
+         <div class="font">Business Name</div>
+         <input autocomplete="off" type="text" placeholder="Business Name"name="Business name">
+         <div class="font">Home Address</div>
+         <input autocomplete="off" type="text" placeholder="Home address"name="Address">
+         <div class="font">Area</div>
+         <input autocomplete="off" placeholder="What area is this ?"type="text" name="area">
+        <div class="menu">
+         <div class="font">Area</div>
+        <input class="mix" text="type" placeholder="Select state">
+        <input class="mix" text="type" placeholder="Local govt">
+        </div>
+        <div class="font">Business</div>
+        <input autocomplete="off" placeholder="Specify business srea"type="text" name="Address">
+        
+           
+            <button type="submit">Continue</button>
+        </div>
+        </form>
+    </div>
+    <script src="valid.js"></script>
+</body>
+</html>
